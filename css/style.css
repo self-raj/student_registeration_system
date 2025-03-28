@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+
+}
+
+body {
+
+
+  background: linear-gradient(311deg, rgba(34,193,195,1) 28%, rgba(61,62,66,1) 71%);
+}
+
+.all-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;align-items: center;
+  background-color: rgba(0, 0, 0, 0)!important;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.heading h1 {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(235, 232, 234);
+}
+
+.heading p {
+  /* max-width: 800px; */
+  color: rgb(255, 228, 228);
+  text-align: center;
+  font-size: 18px;
+  line-height: 19px;
+  padding: 17px;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg,#e994b7a8, #94e9e879);
+}
+
+.form-section {
+  padding: 10px;
+  width: 40%;
+}
+
+.form-section h2 {
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #12022465;
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #218838;
+}
+
+.details-section {
+  padding: 10px;
+  width: auto;
+}
+
+.details-section h2 {
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-align: center;
+
+}
+
+.student-card-first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #744242, #100347);
+}
+
+.student-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #221c1a, #646464);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 679px;
+}
+
+.details-section .student-card-first .static span {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+
+}
+
+#student-list .student-info span {
+
+  color: white;
+
+}
+
+
+
+.student-info,
+.static {
+  display: grid;
+  grid-template-columns: 50px 90px 200px 61px 113px 60px 60px;
+  align-items: center;
+  width: 100%;
+  gap: 2px;
+}
+
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.edit-btn {
+  background: #ffc107;
+  color: black;
+}
+
+.edit-btn:hover {
+  background: #e0a800;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+#student-list {
+  overflow-y: auto;
+  max-height: 300px;
+  overflow-x: hidden;
+
+}
+
+@media (max-width:992px) {
+  body {
+    height: auto;
+    padding-top: 10px;
+  }
+  .heading h1 {
+    padding-top: 0px;
+
+    font-size: 30px;
+    color: rgb(235, 232, 234);
+  }
+  
+  .heading p {
+    /* max-width: 800px; */
+    color: rgb(255, 228, 228);
+    text-align: start;
+    font-size: 18px;
+    line-height: 19px;
+    padding: 17px;
+    font-weight: 700;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #120224;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .form-section {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .details-section {
+    padding: 20px;
+    width: auto;
+  }
+
+
+
+  .student-card-first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100% !important;
+    overflow: scroll;
+  }
+
+  .student-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .student-info,
+  .static {
+    display: grid;
+    grid-template-columns: 50px 100px 205px 61px 113px 60px 60px;
+    align-items: center;
+    width: 100%;
+    gap: 2px;
+    margin-right: 15px;
+  }
+
+  #student-list {
+    /* max-width: 660px; */
+    overflow-y: scroll;
+    max-height: 200px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1025px) {
+  body {
+    padding-top: 50px;
+    height: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .form-section {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .details-section {
+    padding: 20px;
+    width: auto;
+  }
+
+  .student-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+
+  }
+
+  #student-list {
+    /* max-width: 660px; */
+    overflow-y: scroll;
+    max-height: 200px;
+    overflow-x: hidden;
+  }
+
+  .student-info,
+  .static {
+    display: grid;
+    grid-template-columns: 86px 134px 205px 114px 127px 86px 60px;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    margin-right: 15px;
+  }
+
+}
