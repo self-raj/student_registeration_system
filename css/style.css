@@ -175,6 +175,7 @@ button:hover {
   cursor: pointer;
   border-radius: 5px;
   font-size: 12px;
+  margin: 0;
 }
 
 .edit-btn {
